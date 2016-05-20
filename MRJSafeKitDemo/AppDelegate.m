@@ -29,14 +29,20 @@
 //    NSString *obj7 = [NSString stringWithUTF8String:"1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"];//__NSCFString
 //    
     
-    NSString *str = @"123";
-    NSString *str2 = [str substringFromIndex:9];
+//    NSString *str = @"123";
+//    NSString *str2 = [str substringFromIndex:9];
+//    
+//    NSMutableString *mStr = [[NSMutableString alloc]initWithString:str];
+////    id value = [mStr substringFromIndex:10];
+//    NSString *str3 = [str2 stringByAppendingString:nil];
+//    NSString *str4 = [str2 stringByAppendingFormat:@"1",nil,nil];
+////    id value = [arr objectAtIndex:1];
     
-    NSMutableString *mStr = [[NSMutableString alloc]initWithString:str];
-//    id value = [mStr substringFromIndex:10];
-    NSString *str3 = [str2 stringByAppendingString:nil];
-    NSString *str4 = [str2 stringByAppendingFormat:@"1",nil,nil];
-//    id value = [arr objectAtIndex:1];
+    
+    NSMutableArray *arr = [[NSMutableArray alloc]initWithObjects:@"1",@"2",@"3",nil, nil];
+    
+    id obj1 = [arr objectAtIndex:10];
+    id obj2 = [arr subarrayWithRange:NSMakeRange(10, 10)];
     return YES;
 }
 
