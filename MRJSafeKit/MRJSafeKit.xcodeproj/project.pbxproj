@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05B7DCB61CE955130040B0B5 /* MRJSafeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 05B7DCB51CE955130040B0B5 /* MRJSafeKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05B7DCBD1CE955130040B0B5 /* MRJSafeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05B7DCB21CE955130040B0B5 /* MRJSafeKit.framework */; };
+		05B7DCC21CE955130040B0B5 /* MRJSafeKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05B7DCC11CE955130040B0B5 /* MRJSafeKitTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		05B7DCBE1CE955130040B0B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05B7DCA91CE955130040B0B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05B7DCB11CE955130040B0B5;
+			remoteInfo = MRJSafeKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05B7DCB21CE955130040B0B5 /* MRJSafeKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MRJSafeKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		05B7DCB51CE955130040B0B5 /* MRJSafeKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRJSafeKit.h; sourceTree = "<group>"; };
+		05B7DCB71CE955130040B0B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05B7DCBC1CE955130040B0B5 /* MRJSafeKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MRJSafeKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		05B7DCC11CE955130040B0B5 /* MRJSafeKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRJSafeKitTests.m; sourceTree = "<group>"; };
+		05B7DCC31CE955130040B0B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05B7DCD61CE95B570040B0B5 /* NSArray+safety.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+safety.h"; path = "MRJSafeKit/NSArray+safety.h"; sourceTree = "<group>"; };
+		05B7DCD71CE95B570040B0B5 /* NSArray+safety.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+safety.m"; path = "MRJSafeKit/NSArray+safety.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		05B7DCAE1CE955130040B0B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05B7DCB91CE955130040B0B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05B7DCBD1CE955130040B0B5 /* MRJSafeKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05B7DCA81CE955130040B0B5 = {
+			isa = PBXGroup;
+			children = (
+				05B7DCD51CE95B1A0040B0B5 /* NSArraySafe */,
+				05B7DCB41CE955130040B0B5 /* MRJSafeKit */,
+				05B7DCC01CE955130040B0B5 /* MRJSafeKitTests */,
+				05B7DCB31CE955130040B0B5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		05B7DCB31CE955130040B0B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05B7DCB21CE955130040B0B5 /* MRJSafeKit.framework */,
+				05B7DCBC1CE955130040B0B5 /* MRJSafeKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		05B7DCB41CE955130040B0B5 /* MRJSafeKit */ = {
+			isa = PBXGroup;
+			children = (
+				05B7DCB51CE955130040B0B5 /* MRJSafeKit.h */,
+				05B7DCB71CE955130040B0B5 /* Info.plist */,
+			);
+			path = MRJSafeKit;
+			sourceTree = "<group>";
+		};
+		05B7DCC01CE955130040B0B5 /* MRJSafeKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				05B7DCC11CE955130040B0B5 /* MRJSafeKitTests.m */,
+				05B7DCC31CE955130040B0B5 /* Info.plist */,
+			);
+			path = MRJSafeKitTests;
+			sourceTree = "<group>";
+		};
+		05B7DCD51CE95B1A0040B0B5 /* NSArraySafe */ = {
+			isa = PBXGroup;
+			children = (
+				05B7DCD61CE95B570040B0B5 /* NSArray+safety.h */,
+				05B7DCD71CE95B570040B0B5 /* NSArray+safety.m */,
+			);
+			name = NSArraySafe;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		05B7DCAF1CE955130040B0B5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05B7DCB61CE955130040B0B5 /* MRJSafeKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		05B7DCB11CE955130040B0B5 /* MRJSafeKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05B7DCC61CE955130040B0B5 /* Build configuration list for PBXNativeTarget "MRJSafeKit" */;
+			buildPhases = (
+				05B7DCAD1CE955130040B0B5 /* Sources */,
+				05B7DCAE1CE955130040B0B5 /* Frameworks */,
+				05B7DCAF1CE955130040B0B5 /* Headers */,
+				05B7DCB01CE955130040B0B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MRJSafeKit;
+			productName = MRJSafeKit;
+			productReference = 05B7DCB21CE955130040B0B5 /* MRJSafeKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		05B7DCBB1CE955130040B0B5 /* MRJSafeKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05B7DCC91CE955130040B0B5 /* Build configuration list for PBXNativeTarget "MRJSafeKitTests" */;
+			buildPhases = (
+				05B7DCB81CE955130040B0B5 /* Sources */,
+				05B7DCB91CE955130040B0B5 /* Frameworks */,
+				05B7DCBA1CE955130040B0B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05B7DCBF1CE955130040B0B5 /* PBXTargetDependency */,
+			);
+			name = MRJSafeKitTests;
+			productName = MRJSafeKitTests;
+			productReference = 05B7DCBC1CE955130040B0B5 /* MRJSafeKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		05B7DCA91CE955130040B0B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = laomi;
+				TargetAttributes = {
+					05B7DCB11CE955130040B0B5 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					05B7DCBB1CE955130040B0B5 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 05B7DCAC1CE955130040B0B5 /* Build configuration list for PBXProject "MRJSafeKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 05B7DCA81CE955130040B0B5;
+			productRefGroup = 05B7DCB31CE955130040B0B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				05B7DCB11CE955130040B0B5 /* MRJSafeKit */,
+				05B7DCBB1CE955130040B0B5 /* MRJSafeKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		05B7DCB01CE955130040B0B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05B7DCBA1CE955130040B0B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		05B7DCAD1CE955130040B0B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05B7DCB81CE955130040B0B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05B7DCC21CE955130040B0B5 /* MRJSafeKitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		05B7DCBF1CE955130040B0B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05B7DCB11CE955130040B0B5 /* MRJSafeKit */;
+			targetProxy = 05B7DCBE1CE955130040B0B5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		05B7DCC41CE955130040B0B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		05B7DCC51CE955130040B0B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		05B7DCC71CE955130040B0B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MRJSafeKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MRJ.MRJSafeKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		05B7DCC81CE955130040B0B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MRJSafeKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MRJ.MRJSafeKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		05B7DCCA1CE955130040B0B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MRJSafeKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MRJ.MRJSafeKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		05B7DCCB1CE955130040B0B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MRJSafeKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MRJ.MRJSafeKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05B7DCAC1CE955130040B0B5 /* Build configuration list for PBXProject "MRJSafeKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05B7DCC41CE955130040B0B5 /* Debug */,
+				05B7DCC51CE955130040B0B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05B7DCC61CE955130040B0B5 /* Build configuration list for PBXNativeTarget "MRJSafeKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05B7DCC71CE955130040B0B5 /* Debug */,
+				05B7DCC81CE955130040B0B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		05B7DCC91CE955130040B0B5 /* Build configuration list for PBXNativeTarget "MRJSafeKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05B7DCCA1CE955130040B0B5 /* Debug */,
+				05B7DCCB1CE955130040B0B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 05B7DCA91CE955130040B0B5 /* Project object */;
+}

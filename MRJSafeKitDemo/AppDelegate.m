@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "NSArray+safety.h"
+//#import "NSArray_MRJSafe.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,24 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+//    NSArray *arr = [[NSArray alloc]initWithObjects:@"1", nil];
+//    NSString *obj1 = @"1";//__NSCFContstantString
+//    NSString *obj2 = [NSString alloc];//NSPlaceholderString
+//    NSString *obj3= [[NSString alloc]init];//__NSCFContstantString
+//    NSString *obj4 = [NSString stringWithFormat:@"2"];//NSTaggedPointString
+//    NSString *obj5 = [NSString stringWithFormat:@"1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"];//超过64的长度_NSCFString
+//    NSString *obj6 = [NSString stringWithUTF8String:"c"];//NSTaggedPointString
+//    NSString *obj7 = [NSString stringWithUTF8String:"1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"];//__NSCFString
+//    
+    
+    NSString *str = @"123";
+    NSString *str2 = [str substringFromIndex:9];
+    
+    NSMutableString *mStr = [[NSMutableString alloc]initWithString:str];
+//    id value = [mStr substringFromIndex:10];
+    NSString *str3 = [str2 stringByAppendingString:nil];
+    NSString *str4 = [str2 stringByAppendingFormat:@"1",nil,nil];
+//    id value = [arr objectAtIndex:1];
     return YES;
 }
 
