@@ -12,20 +12,6 @@
 
 @implementation NSArray (safety)
 
--(id)swizzled_objectAtIndex:(NSUInteger)index;
-{
-    return nil;
-}
 
--(id)my_objectAtIndex:(NSUInteger)index;
-{
-    NSLog(@"新方法");
-    return nil;
-}
-+ (void)load {
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-    });
-}
 
 @end

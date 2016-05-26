@@ -19,9 +19,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"aaaa";
+    self.view.backgroundColor = [UIColor greenColor];
     // Do any additional setup after loading the view, typically from a nib.
     UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
-    [btn addTarget:self action:@selector(viewWillAppear:) forControlEvents:UIControlEventTouchUpInside];
+    [btn addTarget:self action:@selector(test) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
     btn.backgroundColor = [UIColor redColor];
 //    self.automaticallyAdjustsScrollViewInsets
@@ -43,6 +45,14 @@
     // Dispose of any resources that can be recreated.
 }
 
-
+-(void)test
+{
+    UIViewController *v = [[UIViewController alloc]init];
+    [self.navigationController pushViewController:v animated:YES];
+}
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+}
 
 @end

@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "NSArray+safety.h"
 //#import "NSArray_MRJSafe.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -18,6 +19,15 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    
+    ViewController *vc = [[ViewController alloc]init];
+    
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:vc];
+    self.window.rootViewController = nav;
+    
+    [self.window makeKeyAndVisible];
+    
     // Override point for customization after application launch.
 //    NSArray *arr = [[NSArray alloc]initWithObjects:@"1", nil];
 //    NSString *obj1 = @"1";//__NSCFContstantString
@@ -39,10 +49,12 @@
 ////    id value = [arr objectAtIndex:1];
     
     
-    NSMutableArray *arr = [[NSMutableArray alloc]initWithObjects:@"1",@"2",@"3",nil, nil];
-    
-    id obj1 = [arr objectAtIndex:10];
-    id obj2 = [arr subarrayWithRange:NSMakeRange(10, 10)];
+//    NSMutableArray *arr = [[NSMutableArray alloc]initWithObjects:@"1",@"2",@"3",nil, nil];
+////    [arr addObserver:self forKeyPath:@"_count" options:NSKeyValueObservingOptionNew context:NULL];
+////    id obj1 = [arr objectAtIndex:10];
+//    [arr addObject:@"a"];
+////    id obj2 = [arr subarrayWithRange:NSMakeRange(10, 10)];
+//    [arr replaceObjectAtIndex:8 withObject:@"kkk"];
     return YES;
 }
 

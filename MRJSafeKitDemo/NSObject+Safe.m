@@ -14,7 +14,11 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
          NSObject* obj = [[NSObject alloc] init];
-        [self cls:[obj class] swizzleInstanceMethods:@selector(addObserver:forKeyPath:options:context:),nil];
+        [obj swizzleInstanceMethods:@selector(performSelector:),@selector(performSelector:withObject:afterDelay:),@selector(performSelector:withObject:withObject:),@selector(performSelectorOnMainThread:withObject:waitUntilDone:), nil];
+        
+        id obj2 = [[self alloc]init];
+                    
+        [obj2 swizzleInstanceMethods:@selector(addObserver:forKeyPath:options:context:),@selector(removeObserver:forKeyPath:),nil];
     });
 }
 - (void) mrjSafe_addObserver:(NSObject *)observer forKeyPath:(NSString *)keyPath options:(NSKeyValueObservingOptions)options context:(void *)context
@@ -35,4 +39,22 @@
     }
 }
 
+-(void)mrjSafe_performSelector:(SEL)aSelector
+{
+    [self mrjSafe_performSelector:aSelector];
+}
+-(void)mrjSafe_performSelectorOnMainThread:(SEL)aSelector withObject:(id)arg waitUntilDone:(BOOL)wait
+{
+    [self mrjSafe_performSelectorOnMainThread:aSelector withObject:arg waitUntilDone:wait];
+   
+}
+
+- (void)mrjSafe_performSelector:(SEL)aSelector withObject:(nullable id)anArgument afterDelay:(NSTimeInterval)delay;
+{
+    [self mrjSafe_performSelector:aSelector withObject:anArgument afterDelay:delay];
+    
+}
+
+
+        
 @end

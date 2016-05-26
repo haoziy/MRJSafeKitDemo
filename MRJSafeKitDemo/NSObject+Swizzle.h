@@ -8,14 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import <objc/runtime.h>
+#import <objc/message.h>
 
 #define MRJFunctionPrefix @"mrjSafe"
 @interface NSObject (Swizzle)
 
 
--(void)cls:(Class)cls swizzleClassMethods:(SEL)oldSelectors,...;
++(void)swizzleClassMethods:(SEL)oldSelectors,...;
 
--(void)cls:(Class)cls swizzleInstanceMethods:(SEL)oldSelectors, ...;
+-(void)swizzleInstanceMethods:(SEL)oldSelectors, ...;
 
 + (void)exchangeClassOldSelector:(SEL)oldSelector withNewSelector:(SEL)newSelector;
 - (void)swizzleInstanceMethod:(SEL)origSelector withMethod:(SEL)newSelector;

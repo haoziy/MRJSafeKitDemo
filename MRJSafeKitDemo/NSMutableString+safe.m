@@ -17,9 +17,9 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         NSMutableString* str  = [[NSMutableString alloc] init];
-        [self cls:[str class] swizzleInstanceMethods:@selector(insertString:atIndex:),@selector(deleteCharactersInRange:),@selector(substringFromIndex:),@selector(substringToIndex:),@selector(substringWithRange:),nil];
+        [self cls:[str class] swizzleInstanceMethods:@selector(insertString:atIndex:),@selector(substringFromIndex:),@selector(substringToIndex:),nil];
     });
-    
+//    ,@selector(substringWithRange:),@selector(deleteCharactersInRange:)
 }
 - (void)mrjSafe_insertString:(NSString *)aString atIndex:(NSUInteger)loc;
 {

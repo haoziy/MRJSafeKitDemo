@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 @interface NSArray (safety)
 
--(id)swizzled_objectAtIndex:(NSUInteger)index;
+
 
 
 @end
