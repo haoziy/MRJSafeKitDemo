@@ -13,10 +13,10 @@
 + (void)load {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-         NSObject* obj = [[NSObject alloc] init];
+         NSObject* obj = [[[NSObject alloc] init]autorelease];
         [obj swizzleInstanceMethods:@selector(performSelector:),@selector(performSelector:withObject:afterDelay:),@selector(performSelector:withObject:withObject:),@selector(performSelectorOnMainThread:withObject:waitUntilDone:), nil];
         
-        id obj2 = [[self alloc]init];
+        id obj2 = [[[self alloc]init]autorelease];
                     
         [obj2 swizzleInstanceMethods:@selector(addObserver:forKeyPath:options:context:),@selector(removeObserver:forKeyPath:),nil];
     });

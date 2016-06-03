@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0553AFFB1CF6D8FF00E1D232 /* NSArray+safety.m in Sources */ = {isa = PBXBuildFile; fileRef = 0553AFF61CF6D8FF00E1D232 /* NSArray+safety.m */; };
+		054F15D51D01310C009052FF /* NSDictionary+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 054F15D41D01310C009052FF /* NSDictionary+Safe.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		054F15D81D015E33009052FF /* NSMutableDictionary+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 054F15D71D015E33009052FF /* NSMutableDictionary+Safe.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		054F15DC1D016276009052FF /* NSSet+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 054F15DB1D016276009052FF /* NSSet+Safe.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		054F15DF1D01628E009052FF /* NSMutableSet+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 054F15DE1D01628E009052FF /* NSMutableSet+Safe.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		054F15E21D0168A8009052FF /* NSOrderedSet+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 054F15E11D0168A8009052FF /* NSOrderedSet+Safe.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		054F15E51D0171B0009052FF /* NSMutableOrderedSet+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 054F15E41D0171B0009052FF /* NSMutableOrderedSet+Safe.m */; };
+		0553AFFB1CF6D8FF00E1D232 /* NSArray+safety.m in Sources */ = {isa = PBXBuildFile; fileRef = 0553AFF61CF6D8FF00E1D232 /* NSArray+safety.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0553AFFC1CF6D8FF00E1D232 /* NSMutableArray+safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 0553AFF71CF6D8FF00E1D232 /* NSMutableArray+safe.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		056F39CA1CF3F96D00516899 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 056F39C91CF3F96D00516899 /* MyViewController.m */; };
 		05A446881CE9CD3400768A87 /* NSObject+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A446871CE9CD3400768A87 /* NSObject+Swizzle.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -54,6 +60,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		054F15D31D01310C009052FF /* NSDictionary+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+Safe.h"; path = "MRJSafeKitDemo/NSDictionary+Safe.h"; sourceTree = "<group>"; };
+		054F15D41D01310C009052FF /* NSDictionary+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+Safe.m"; path = "MRJSafeKitDemo/NSDictionary+Safe.m"; sourceTree = "<group>"; };
+		054F15D61D015E33009052FF /* NSMutableDictionary+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableDictionary+Safe.h"; path = "MRJSafeKitDemo/NSMutableDictionary+Safe.h"; sourceTree = "<group>"; };
+		054F15D71D015E33009052FF /* NSMutableDictionary+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableDictionary+Safe.m"; path = "MRJSafeKitDemo/NSMutableDictionary+Safe.m"; sourceTree = "<group>"; };
+		054F15DA1D016276009052FF /* NSSet+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSSet+Safe.h"; path = "MRJSafeKitDemo/NSSet+Safe.h"; sourceTree = "<group>"; };
+		054F15DB1D016276009052FF /* NSSet+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSSet+Safe.m"; path = "MRJSafeKitDemo/NSSet+Safe.m"; sourceTree = "<group>"; };
+		054F15DD1D01628E009052FF /* NSMutableSet+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableSet+Safe.h"; path = "MRJSafeKitDemo/NSMutableSet+Safe.h"; sourceTree = "<group>"; };
+		054F15DE1D01628E009052FF /* NSMutableSet+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableSet+Safe.m"; path = "MRJSafeKitDemo/NSMutableSet+Safe.m"; sourceTree = "<group>"; };
+		054F15E01D0168A8009052FF /* NSOrderedSet+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSOrderedSet+Safe.h"; path = "MRJSafeKitDemo/NSOrderedSet+Safe.h"; sourceTree = "<group>"; };
+		054F15E11D0168A8009052FF /* NSOrderedSet+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSOrderedSet+Safe.m"; path = "MRJSafeKitDemo/NSOrderedSet+Safe.m"; sourceTree = "<group>"; };
+		054F15E31D0171B0009052FF /* NSMutableOrderedSet+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableOrderedSet+Safe.h"; path = "MRJSafeKitDemo/NSMutableOrderedSet+Safe.h"; sourceTree = "<group>"; };
+		054F15E41D0171B0009052FF /* NSMutableOrderedSet+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableOrderedSet+Safe.m"; path = "MRJSafeKitDemo/NSMutableOrderedSet+Safe.m"; sourceTree = "<group>"; };
 		0553AFF61CF6D8FF00E1D232 /* NSArray+safety.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+safety.m"; path = "MRJSafeKitDemo/NSArray+safety.m"; sourceTree = "<group>"; };
 		0553AFF71CF6D8FF00E1D232 /* NSMutableArray+safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+safe.m"; path = "MRJSafeKitDemo/NSMutableArray+safe.m"; sourceTree = "<group>"; };
 		0553AFF91CF6D8FF00E1D232 /* NSArray+safety.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+safety.h"; path = "MRJSafeKitDemo/NSArray+safety.h"; sourceTree = "<group>"; };
@@ -108,7 +126,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0553AFF51CF6D8C500E1D232 /* NSArray_ARC */ = {
+		054F15CF1D013071009052FF /* NSDictionary_NoARC */ = {
+			isa = PBXGroup;
+			children = (
+				054F15D31D01310C009052FF /* NSDictionary+Safe.h */,
+				054F15D41D01310C009052FF /* NSDictionary+Safe.m */,
+				054F15D61D015E33009052FF /* NSMutableDictionary+Safe.h */,
+				054F15D71D015E33009052FF /* NSMutableDictionary+Safe.m */,
+			);
+			name = NSDictionary_NoARC;
+			sourceTree = "<group>";
+		};
+		054F15D91D01623D009052FF /* NSset_NoARC */ = {
+			isa = PBXGroup;
+			children = (
+				054F15DA1D016276009052FF /* NSSet+Safe.h */,
+				054F15DB1D016276009052FF /* NSSet+Safe.m */,
+				054F15DD1D01628E009052FF /* NSMutableSet+Safe.h */,
+				054F15DE1D01628E009052FF /* NSMutableSet+Safe.m */,
+				054F15E01D0168A8009052FF /* NSOrderedSet+Safe.h */,
+				054F15E11D0168A8009052FF /* NSOrderedSet+Safe.m */,
+				054F15E31D0171B0009052FF /* NSMutableOrderedSet+Safe.h */,
+				054F15E41D0171B0009052FF /* NSMutableOrderedSet+Safe.m */,
+			);
+			name = NSset_NoARC;
+			sourceTree = "<group>";
+		};
+		0553AFF51CF6D8C500E1D232 /* NSArray_NoARC */ = {
 			isa = PBXGroup;
 			children = (
 				0553AFF91CF6D8FF00E1D232 /* NSArray+safety.h */,
@@ -116,13 +160,15 @@
 				0553AFFA1CF6D8FF00E1D232 /* NSMutableArray+safe.h */,
 				0553AFF71CF6D8FF00E1D232 /* NSMutableArray+safe.m */,
 			);
-			name = NSArray_ARC;
+			name = NSArray_NoARC;
 			sourceTree = "<group>";
 		};
 		05B7DC691CE954E50040B0B5 = {
 			isa = PBXGroup;
 			children = (
-				0553AFF51CF6D8C500E1D232 /* NSArray_ARC */,
+				054F15D91D01623D009052FF /* NSset_NoARC */,
+				054F15CF1D013071009052FF /* NSDictionary_NoARC */,
+				0553AFF51CF6D8C500E1D232 /* NSArray_NoARC */,
 				05A446891CE9D1E600768A87 /* NSObject+Safe.h */,
 				05A4468A1CE9D1E600768A87 /* NSObject+Safe.m */,
 				05A446861CE9CD3400768A87 /* NSObject+Swizzle.h */,
@@ -351,9 +397,15 @@
 			files = (
 				05A446881CE9CD3400768A87 /* NSObject+Swizzle.m in Sources */,
 				05B7DC7D1CE954E50040B0B5 /* ViewController.m in Sources */,
+				054F15DC1D016276009052FF /* NSSet+Safe.m in Sources */,
+				054F15E51D0171B0009052FF /* NSMutableOrderedSet+Safe.m in Sources */,
 				056F39CA1CF3F96D00516899 /* MyViewController.m in Sources */,
 				0553AFFB1CF6D8FF00E1D232 /* NSArray+safety.m in Sources */,
+				054F15D81D015E33009052FF /* NSMutableDictionary+Safe.m in Sources */,
 				0553AFFC1CF6D8FF00E1D232 /* NSMutableArray+safe.m in Sources */,
+				054F15DF1D01628E009052FF /* NSMutableSet+Safe.m in Sources */,
+				054F15E21D0168A8009052FF /* NSOrderedSet+Safe.m in Sources */,
+				054F15D51D01310C009052FF /* NSDictionary+Safe.m in Sources */,
 				05B7DC7A1CE954E50040B0B5 /* AppDelegate.m in Sources */,
 				05A4468B1CE9D1E600768A87 /* NSObject+Safe.m in Sources */,
 				05B7DC771CE954E50040B0B5 /* main.m in Sources */,

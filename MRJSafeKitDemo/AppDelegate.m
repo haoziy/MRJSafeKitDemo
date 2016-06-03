@@ -23,13 +23,18 @@
     
     ViewController *vc = [[ViewController alloc]init];
     
-    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:vc];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:vc];   
     self.window.rootViewController = nav;
     
     [self.window makeKeyAndVisible];
     
+    
+    NSSet *set = [NSSet setWithObjects:nil,@"1",@"2",@"3", nil];
+    NSSet *set1 = [NSSet setWithObject:nil];
+    
+//    NSDictionary *dict = [[NSDictionary alloc]initWithObjectsAndKeys:@"1",nil,@"2", nil,nil];
     // Override point for customization after application launch.
-//    NSArray *arr = [[NSArray alloc]initWithObjects:@"1", nil];
+    NSArray *arr = [[NSArray alloc]initWithObjects:@"1", nil];
 //    NSString *obj1 = @"1";//__NSCFContstantString
 //    NSString *obj2 = [NSString alloc];//NSPlaceholderString
 //    NSString *obj3= [[NSString alloc]init];//__NSCFContstantString
@@ -48,12 +53,21 @@
 //    NSString *str4 = [str2 stringByAppendingFormat:@"1",nil,nil];
 ////    id value = [arr objectAtIndex:1];
     
-    
-//    NSMutableArray *arr = [[NSMutableArray alloc]initWithObjects:@"1",@"2",@"3",nil, nil];
-////    [arr addObserver:self forKeyPath:@"_count" options:NSKeyValueObservingOptionNew context:NULL];
-////    id obj1 = [arr objectAtIndex:10];
+//    NSDictionary *dict = @{@"1":@"1",@"1",ni};
+//    NSDictionary *d = @{@"1":@"2",@"nil":@"1"};
+//    
+//    NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:nil,@"hhh",@"ggg",@"jjj",nil,@"kkk",nil];
+//    NSArray *rrr = [[NSArray alloc]initWithArray:nil];
+//    NSArray *ar = [[NSArray alloc]initWithObjects:nil,nil, nil];
+//    id ob = ar[1];
+//    
+//    NSArray *subarr = [ar subarrayWithRange:NSMakeRange(10, 10)];
+//    
+//    NSMutableArray *arr = [[NSMutableArray alloc]initWithObjects:nil,nil,@"2",@"3",nil,nil, nil];
+//////    [arr addObserver:self forKeyPath:@"_count" options:NSKeyValueObservingOptionNew context:NULL];
+//    id obj1 = [arr objectAtIndex:10];
 //    [arr addObject:@"a"];
-////    id obj2 = [arr subarrayWithRange:NSMakeRange(10, 10)];
+//    id obj2 = [arr subarrayWithRange:NSMakeRange(10, 10)];
 //    [arr replaceObjectAtIndex:8 withObject:@"kkk"];
     return YES;
 }
